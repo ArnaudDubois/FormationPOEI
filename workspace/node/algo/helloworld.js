@@ -1,6 +1,6 @@
 /**
  * @name hello.node
- * @desc juste pour les algorithmes
+ * @desc juste pour l'algorithme Hello  World
  * @author Arnaud Dubois - Déc. 2018
  * @version 1.0.0
  *  */
@@ -90,13 +90,19 @@ for(let i=0; i<tableauFinal2.length; i++)
 
 //Création d'une variable de type tableau
 const tablo = [25, 50, 250, 312, 3, 22, 8];
-let total = 0;
-let maximum = tablo[0];
-let minimum = tablo[0];
 
 //Partie Tri Ascendant 1ère Version. Initialisation du tableau.
 let tableauFinal = [tablo[0].valueOf];
 
+let total = 0;
+let maximum = tablo[0];
+let minimum = tablo[0];
+//Partie Tri Ascendant 1ère Version
+for (let i = 0; i < tablo.length; i++) {
+    if(i!=0)tableauFinal=sort(tablo[i], tableauFinal);
+}
+    
+    
 //Boucle de parcours du tableau
 for (let i = 0; i < tablo.length; i++) {
     // Condition "if" nombre pair et impair (modulo 2)
@@ -114,8 +120,7 @@ for (let i = 0; i < tablo.length; i++) {
     //Calcul de la valeur maximale
     maximum = minOrMaxValue(tablo[i], maximum, false);
 
-    //Partie Tri Ascendant 1ère Version
-    if(i!=0)tableauFinal=sort(tablo[i], tableauFinal);
+
 }
 
 console.log('Tri Ascendant : ');
