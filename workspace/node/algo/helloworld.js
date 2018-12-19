@@ -1,6 +1,6 @@
 /**
  * @name hello.node
- * @desc juste pour l'algorithme Hello  World
+ * @desc juste pour l'algorithmes Hello  World
  * @author Arnaud Dubois - Déc. 2018
  * @version 1.0.0
  *  */
